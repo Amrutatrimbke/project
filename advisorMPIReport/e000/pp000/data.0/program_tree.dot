@@ -1,0 +1,367 @@
+digraph G {
+
+		212 [label="\n __clone\nNot Analyzed: Not User Code", style=dotted]
+	212 -> 362
+		362 [label="\n start_thread\nNot Analyzed: Not User Code", style=dotted]
+	362 -> 213
+		213 [label="\n [loop in start_thread]\nNot Analyzed: Not User Code", style=dotted]
+	213 -> 233
+		233 [label="\n progress_engine\nNot Analyzed: Not a Loop", style=dotted]
+	subgraph cluster_loopnest_215 {
+		graph [style=dotted];
+
+		215 [label="\n [loop in progress_engine]\nNot Analyzed: "]
+	215 -> 368
+		368 [label="\n event_base_loop at event.c:1923\nNot Analyzed: Not a Loop", style=dotted]
+	368 -> 369
+		369 [label="\n [loop in event_base_loop at event.c:1945]\nNot Analyzed: "]
+	369 -> 370
+		370 [label="\n [loop in event_base_loop at event.c:1961]\nNot Analyzed: "]
+	370 -> 371
+		371 [label="\n [loop in event_base_loop at event.c:1961]\nNot Analyzed: "]
+	371 -> 372
+		372 [label="\n [loop in event_base_loop at event.c:1961]\nNot Analyzed: "]
+	372 -> 373
+		373 [label="\n event_process_active at event.c:1760\nNot Analyzed: Not a Loop", style=dotted]
+	373 -> 216
+		216 [label="\n [loop in event_process_active at event.c:1778]\nNot Analyzed: "]
+	216 -> 217
+		217 [label="\n event_process_active_single_queue at event.c:1634\nNot Analyzed: Not a Loop", style=dotted]
+	217 -> 218
+		218 [label="\n pmix_ptl_base_process_msg\nNot Analyzed: Not a Loop", style=dotted]
+	218 -> 219
+		219 [label="\n pmix_server_message_handler\nNot Analyzed: Not a Loop", style=dotted]
+	219 -> 220
+		220 [label="\n server_switchyard\nNot Analyzed: Not a Loop", style=dotted]
+	220 -> 221
+		221 [label="\n pmix_common_dstor_register_job_info\nNot Analyzed: Not a Loop", style=dotted]
+	221 -> 222
+		222 [label="\n _store_job_info\nNot Analyzed: Not a Loop", style=dotted]
+	222 -> 223
+		223 [label="\n _dstore_store_nolock\nNot Analyzed: Not a Loop", style=dotted]
+	223 -> 235
+		235 [label="\n _update_ns_elem\nNot Analyzed: Not a Loop", style=dotted]
+	235 -> 224
+		224 [label="\n [loop in _update_ns_elem]\nNot Analyzed: "]
+	224 -> 225
+		225 [label="\n pmix_common_dstor_create_new_segment\nNot Analyzed: Not a Loop", style=dotted]
+	225 -> 276
+		276 [label="\n __memset_sse2\nNot Analyzed: Not User Code", style=dotted]
+	}
+	233 -> 215
+		152 [label="\n _start\nNot Analyzed: Not a Loop", style=dotted]
+	152 -> 269
+		269 [label="\n __libc_start_main\nNot Analyzed: Not User Code", style=dotted]
+	269 -> 366
+		366 [label="\n orte_daemon\nNot Analyzed: Not a Loop", style=dotted]
+	366 -> 155
+		155 [label="\n orte_init\nNot Analyzed: Not a Loop", style=dotted]
+	155 -> 198
+		198 [label="\n rte_init\nNot Analyzed: Not a Loop", style=dotted]
+	198 -> 364
+	198 -> 185
+	198 -> 157
+		157 [label="\n opal_hwloc_base_get_topology\nNot Analyzed: Not a Loop", style=dotted]
+	157 -> 314
+		314 [label="\n hwloc_topology_load at topology.c:3983\nNot Analyzed: Not a Loop", style=dotted]
+	314 -> 170
+		170 [label="\n hwloc_discover at topology.c:3333\nNot Analyzed: Not a Loop", style=dotted]
+	170 -> 338
+		338 [label="\n hwloc_discover_by_phase at topology.c:3312\nNot Analyzed: Not a Loop", style=dotted]
+	subgraph cluster_loopnest_171 {
+		graph [style=dotted];
+		171
+		label = "Region #1429\nBase Time: 0.0500009381, Percent Time: 1.5244188445121958\nAcc Time: 0.044192031274074076, Non Acc Time: 0.0400026272\nSpeedup: 1.1314469296489165";
+	subgraph cluster_0_0 {
+		style=filled;
+		color=lightgrey;
+		node [style=filled, color=white];
+		171
+		171 [label="\n [loop in hwloc_discover_by_phase at topology.c:3318]\nunrolls:8"]
+		171 -> 340
+		340 [label="\n hwloc_look_linuxfs at topology-linux.c:6833\nNot Analyzed: ", style=dotted]
+		340 -> 341
+		341 [label="\n [loop in hwloc_look_linuxfs at topology-linux.c:6860]\nNot Analyzed: "]
+		341 -> 342
+		342 [label="\n hwloc_linuxfs_pci_look_pcidevices at topology-linux.c:6608\nNot Analyzed: ", style=dotted]
+		342 -> 174
+		174 [label="\n hwloc_read_path_by_length at topology-linux.c:519\nNot Analyzed: ", style=dotted]
+		174 -> 344
+		344 [label="\n hwloc_open at topology-linux.c:447\nNot Analyzed: ", style=dotted]
+		344 -> 172
+		172 [label="\n hwloc_openat at topology-linux.c:361\nNot Analyzed: ", style=dotted]
+		172 -> 173
+		173 [label="\n openat\nNot Analyzed: ", style=dotted]
+		174 -> 176
+		176 [label="\n __read\nNot Analyzed: ", style=dotted]
+		340 -> 330
+		330 [label="\n [loop in hwloc_look_linuxfs at topology-linux.c:6846]\nNot Analyzed: "]
+		330 -> 331
+		331 [label="\n hwloc_linuxfs_look_cpu at topology-linux.c:5331\nNot Analyzed: ", style=dotted]
+		331 -> 332
+		332 [label="\n [loop in hwloc_linuxfs_look_cpu at topology-linux.c:4240]\nNot Analyzed: ", style=dotted]
+		332 -> 333
+		333 [label="\n look_sysfscpukinds at topology-linux.c:4229\nNot Analyzed: ", style=dotted]
+		333 -> 334
+		334 [label="\n hwloc_read_path_as_uint at topology-linux.c:549\nNot Analyzed: ", style=dotted]
+		334 -> 167
+		167 [label="\n hwloc_read_path_by_length at topology-linux.c:519\nNot Analyzed: ", style=dotted]
+		167 -> 169
+		169 [label="\n __read\nNot Analyzed: ", style=dotted]
+		330 -> 320
+		320 [label="\n [loop in hwloc_look_linuxfs at topology-linux.c:4895]\nNot Analyzed: ", style=dotted]
+		320 -> 160
+		160 [label="\n hwloc_linuxfs_look_cpu at topology-linux.c:5331\nNot Analyzed: ", style=dotted]
+		160 -> 323
+		323 [label="\n look_sysfscpu at topology-linux.c:4278\nNot Analyzed: ", style=dotted]
+		323 -> 324
+		324 [label="\n [loop in look_sysfscpu at topology-linux.c:4358]\nNot Analyzed: ", style=dotted]
+		324 -> 325
+		325 [label="\n [loop in look_sysfscpu at topology-linux.c:4411]\nNot Analyzed: ", style=dotted]
+		325 -> 161
+		161 [label="\n hwloc__alloc_read_path_as_cpumask at topology-linux.c:742\nNot Analyzed: ", style=dotted]
+		161 -> 328
+		328 [label="\n hwloc__read_path_as_cpumask at topology-linux.c:635\nNot Analyzed: ", style=dotted]
+		328 -> 162
+		162 [label="\n [loop in hwloc__read_path_as_cpumask at topology-linux.c:683]\nNot Analyzed: ", style=dotted]
+		162 -> 163
+		163 [label="\n sscanf\nNot Analyzed: ", style=dotted]
+		171 -> 352
+		352 [label="\n hwloc_look_pci at topology-pci.c:133\nNot Analyzed: ", style=dotted]
+		352 -> 353
+		353 [label="\n hwloc_pci_get_names at topology-pci.c:104\nNot Analyzed: ", style=dotted]
+		353 -> 179
+		179 [label="\n [loop in hwloc_pci_get_names at topology-pci.c:121]\nNot Analyzed: ", style=dotted]
+		179 -> 180
+		180 [label="\n hwloc_pci_get_obj_names at topology-pci.c:91\nNot Analyzed: ", style=dotted]
+		180 -> 181
+		181 [label="\n pci_get_strings at common_device_name.c:421\nNot Analyzed: ", style=dotted]
+		181 -> 182
+		182 [label="\n find_device_name at common_device_name.c:349\nNot Analyzed: ", style=dotted]
+		182 -> 240
+		240 [label="\n populate_vendor at common_device_name.c:221\nNot Analyzed: ", style=dotted]
+		240 -> 183
+		183 [label="\n [loop in populate_vendor at common_device_name.c:243]\nNot Analyzed: ", style=dotted]
+		label = "offload #1429\nBase Time: 0.0500009381, Percent Time: 0.015244188445121957\nAcc Time: 0.044192031274074076, Non Acc Time: 0.0400026272\nSpeedup: 1.1314469296489165";
+	}
+
+	}
+	338 -> 171
+		185 [label="\n pmix_server_init\nNot Analyzed: Not a Loop", style=dotted]
+	185 -> 186
+		186 [label="\n pmix3x_server_init\nNot Analyzed: Not a Loop", style=dotted]
+	186 -> 187
+		187 [label="\n PMIx_server_init\nNot Analyzed: Not a Loop", style=dotted]
+	187 -> 188
+		188 [label="\n pmix_rte_init\nNot Analyzed: Not a Loop", style=dotted]
+	188 -> 189
+		189 [label="\n pmix_mca_base_framework_open\nNot Analyzed: Not a Loop", style=dotted]
+	189 -> 190
+		190 [label="\n pmix_gds_open\nNot Analyzed: Not a Loop", style=dotted]
+	190 -> 229
+		229 [label="\n pmix_mca_base_framework_components_open\nNot Analyzed: Not a Loop", style=dotted]
+	subgraph cluster_loopnest_191 {
+		graph [style=dotted];
+
+		191 [label="\n [loop in pmix_mca_base_framework_components_open]\nNot Analyzed: "]
+	191 -> 192
+		192 [label="\n component_open\nNot Analyzed: Not a Loop", style=dotted]
+	}
+	229 -> 191
+		364 [label="\n orte_oob_base_select\nNot Analyzed: Not a Loop", style=dotted]
+	subgraph cluster_loopnest_205 {
+		graph [style=dotted];
+
+		205 [label="\n [loop in orte_daemon]\nNot Analyzed: "]
+	205 -> 206
+		206 [label="\n opal_finalize\nNot Analyzed: Not a Loop", style=dotted]
+	206 -> 207
+		207 [label="\n opal_finalize_util\nNot Analyzed: Not a Loop", style=dotted]
+	207 -> 208
+		208 [label="\n mca_base_var_finalize\nNot Analyzed: Not a Loop", style=dotted]
+	208 -> 231
+		231 [label="\n mca_base_var_group_finalize\nNot Analyzed: Not a Loop", style=dotted]
+	231 -> 209
+		209 [label="\n [loop in mca_base_var_group_finalize]\nNot Analyzed: "]
+	209 -> 210
+		210 [label="\n _int_free\nNot Analyzed: Not User Code", style=dotted]
+	}
+	366 -> 205
+		2 [label="\n _start\nNot Analyzed: Not a Loop", style=dotted]
+	2 -> 263
+		263 [label="\n __libc_start_main\nNot Analyzed: Not User Code", style=dotted]
+	263 -> 244
+		244 [label="\n main\nNot Analyzed: Not a Loop", style=dotted]
+	244 -> 143
+	244 -> 60
+	244 -> 5
+	subgraph cluster_loopnest_69 {
+		graph [style=dotted];
+		69
+		label = "Region #21\nBase Time: 3.0899854388999994, Percent Time: 94.20687313719513\nAcc Time: 1.4736795859203373, Non Acc Time: 1.4499488952000001\nSpeedup: 2.0967824135056143";
+	subgraph cluster_0_0 {
+		style=filled;
+		color=lightgrey;
+		node [style=filled, color=white];
+		69
+		69 [label="\n [loop in main]\nunrolls:5376"]
+		69 -> 246
+		246 [label="\n simulatePath\nNot Analyzed: ", style=dotted]
+		246 -> 70
+		70 [label="\n [loop in simulatePath]\nNot Analyzed: "]
+		70 -> 74
+		74 [label="\n rand\nNot Analyzed: ", style=dotted]
+		70 -> 71
+		71 [label="\n exp\nNot Analyzed: ", style=dotted]
+		70 -> 90
+		90 [label="\n sqrt\nNot Analyzed: ", style=dotted]
+		70 -> 110
+		110 [label="\n func@0x401130\nNot Analyzed: ", style=dotted]
+		70 -> 109
+		109 [label="\n func@0x401030\nNot Analyzed: ", style=dotted]
+		label = "offload #21\nBase Time: 3.0899854388999994, Percent Time: 0.9420687313719514\nAcc Time: 1.4736795859203373, Non Acc Time: 1.4499488952000001\nSpeedup: 2.0967824135056143";
+	}
+
+	}
+	244 -> 69
+		5 [label="\n MPI_Init\nNot Analyzed: Not User Code", style=dotted]
+	5 -> 7
+		7 [label="\n orte_init\nNot Analyzed: Not a Loop", style=dotted]
+	7 -> 22
+		22 [label="\n rte_init.part.0\nNot Analyzed: Not a Loop", style=dotted]
+	22 -> 12
+	22 -> 23
+		23 [label="\n orte_ess_base_proc_binding\nNot Analyzed: Not a Loop", style=dotted]
+	23 -> 24
+		24 [label="\n opal_hwloc_base_get_topology\nNot Analyzed: Not a Loop", style=dotted]
+	24 -> 278
+		278 [label="\n hwloc_topology_load at topology.c:3983\nNot Analyzed: Not a Loop", style=dotted]
+	278 -> 48
+		48 [label="\n hwloc_discover at topology.c:3333\nNot Analyzed: Not a Loop", style=dotted]
+	48 -> 308
+		308 [label="\n hwloc_discover_by_phase at topology.c:3312\nNot Analyzed: Not a Loop", style=dotted]
+	subgraph cluster_loopnest_49 {
+		graph [style=dotted];
+		49
+		label = "Region #105\nBase Time: 0.06999999999999999, Percent Time: 2.134146341463415\nAcc Time: 0.044175228353968254, Non Acc Time: 0.0400031301\nSpeedup: 1.5845984867152794";
+	subgraph cluster_1_0 {
+		style=filled;
+		color=lightgrey;
+		node [style=filled, color=white];
+		49
+		49 [label="\n [loop in hwloc_discover_by_phase at topology.c:3318]\nunrolls:8"]
+		49 -> 302
+		302 [label="\n hwloc_look_linuxfs at topology-linux.c:6833\nNot Analyzed: ", style=dotted]
+		302 -> 283
+		283 [label="\n [loop in hwloc_look_linuxfs at topology-linux.c:6846]\nNot Analyzed: "]
+		283 -> 284
+		284 [label="\n [loop in hwloc_look_linuxfs at topology-linux.c:4895]\nNot Analyzed: "]
+		284 -> 30
+		30 [label="\n hwloc_linuxfs_look_cpu at topology-linux.c:5331\nNot Analyzed: ", style=dotted]
+		30 -> 27
+		27 [label="\n hwloc_linux_parse_cpuinfo at topology-linux.c:4872\nNot Analyzed: ", style=dotted]
+		27 -> 28
+		28 [label="\n fscanf\nNot Analyzed: ", style=dotted]
+		30 -> 36
+		36 [label="\n [Unknown stack frame(s)]\nNot Analyzed: ", style=dotted]
+		30 -> 290
+		290 [label="\n look_sysfscpu at topology-linux.c:4278\nNot Analyzed: ", style=dotted]
+		290 -> 291
+		291 [label="\n [loop in look_sysfscpu at topology-linux.c:4358]\nNot Analyzed: ", style=dotted]
+		291 -> 292
+		292 [label="\n [loop in look_sysfscpu at topology-linux.c:4411]\nNot Analyzed: ", style=dotted]
+		292 -> 293
+		293 [label="\n [loop in look_sysfscpu at topology-linux.c:4482]\nNot Analyzed: ", style=dotted]
+		293 -> 31
+		31 [label="\n [loop in look_sysfscpu at topology-linux.c:4574]\nNot Analyzed: ", style=dotted]
+		31 -> 32
+		32 [label="\n sprintf\nNot Analyzed: ", style=dotted]
+		302 -> 303
+		303 [label="\n [loop in hwloc_look_linuxfs at topology-linux.c:6860]\nNot Analyzed: ", style=dotted]
+		303 -> 304
+		304 [label="\n hwloc_linuxfs_pci_look_pcidevices at topology-linux.c:6608\nNot Analyzed: ", style=dotted]
+		304 -> 45
+		45 [label="\n hwloc_read_path_by_length at topology-linux.c:519\nNot Analyzed: ", style=dotted]
+		45 -> 47
+		47 [label="\n __read\nNot Analyzed: ", style=dotted]
+		49 -> 310
+		310 [label="\n hwloc_look_pci at topology-pci.c:133\nNot Analyzed: ", style=dotted]
+		310 -> 311
+		311 [label="\n hwloc_pci_get_names at topology-pci.c:104\nNot Analyzed: ", style=dotted]
+		311 -> 50
+		50 [label="\n [loop in hwloc_pci_get_names at topology-pci.c:121]\nNot Analyzed: ", style=dotted]
+		50 -> 51
+		51 [label="\n hwloc_pci_get_obj_names at topology-pci.c:91\nNot Analyzed: ", style=dotted]
+		51 -> 52
+		52 [label="\n pci_get_strings at common_device_name.c:421\nNot Analyzed: ", style=dotted]
+		52 -> 53
+		53 [label="\n find_device_name at common_device_name.c:349\nNot Analyzed: ", style=dotted]
+		53 -> 237
+		237 [label="\n populate_vendor at common_device_name.c:221\nNot Analyzed: ", style=dotted]
+		237 -> 58
+		58 [label="\n [loop in populate_vendor at common_device_name.c:243]\nNot Analyzed: ", style=dotted]
+		58 -> 55
+		55 [label="\n fgets\nNot Analyzed: ", style=dotted]
+		49 -> 39
+		39 [label="\n hwloc_x86_discover at topology-x86.c:1614\nNot Analyzed: ", style=dotted]
+		39 -> 295
+		295 [label="\n hwloc_look_x86 at topology-x86.c:1439\nNot Analyzed: ", style=dotted]
+		295 -> 296
+		296 [label="\n [loop in hwloc_look_x86 at topology-x86.c:1301]\nNot Analyzed: ", style=dotted]
+		296 -> 40
+		40 [label="\n look_procs at topology-x86.c:1279\nNot Analyzed: ", style=dotted]
+		40 -> 41
+		41 [label="\n hwloc_linux_set_tid_cpubind at topology-linux.c:840\nNot Analyzed: ", style=dotted]
+		41 -> 42
+		42 [label="\n hwloc_bitmap_first at bitmap.c:1320\nNot Analyzed: ", style=dotted]
+		label = "offload #105\nBase Time: 0.06999999999999999, Percent Time: 0.02134146341463415\nAcc Time: 0.044175228353968254, Non Acc Time: 0.0400031301\nSpeedup: 1.5845984867152794";
+	}
+
+	}
+	308 -> 49
+		12 [label="\n pmix3x_client_init\nNot Analyzed: Not a Loop", style=dotted]
+	12 -> 13
+		13 [label="\n PMIx_Init\nNot Analyzed: Not a Loop", style=dotted]
+	13 -> 14
+		14 [label="\n pmix_rte_init\nNot Analyzed: Not a Loop", style=dotted]
+	14 -> 15
+		15 [label="\n pmix_pinstall_dirs_base_init\nNot Analyzed: Not a Loop", style=dotted]
+	15 -> 16
+		16 [label="\n pmix_pinstall_dirs_expand_internal\nNot Analyzed: Not a Loop", style=dotted]
+	16 -> 265
+		265 [label="\n getenv\nNot Analyzed: Not User Code", style=dotted]
+		60 [label="\n std::vector<float, std::allocator<float>>::vector\nNot Analyzed: Not a Loop", style=dotted]
+	60 -> 61
+		61 [label="\n std::vector<float, std::allocator<float>>::_M_default_initialize\nNot Analyzed: Not a Loop", style=dotted]
+	61 -> 62
+		62 [label="\n std::__uninitialized_default_n_a<float*, unsigned long, float>\nNot Analyzed: Not a Loop", style=dotted]
+	62 -> 63
+		63 [label="\n std::__uninitialized_default_n<float*, unsigned long>\nNot Analyzed: Not a Loop", style=dotted]
+	63 -> 64
+		64 [label="\n std::__uninitialized_default_n_1<(bool)1>::__uninit_default_n<float*, unsigned long>\nNot Analyzed: Not a Loop", style=dotted]
+	64 -> 65
+		65 [label="\n std::fill_n<float*, unsigned long, float>\nNot Analyzed: Not a Loop", style=dotted]
+	65 -> 66
+		66 [label="\n std::__fill_n_a<float*, unsigned long, float>\nNot Analyzed: Not a Loop", style=dotted]
+	66 -> 67
+		67 [label="\n std::__fill_a<float*, float>\nNot Analyzed: Not a Loop", style=dotted]
+	67 -> 242
+		242 [label="\n std::__fill_a1<float*, float>\nNot Analyzed: Not a Loop", style=dotted]
+	subgraph cluster_loopnest_68 {
+		graph [style=dotted];
+
+		68 [label="\n [loop in std::__fill_a1<float*, float>]\nNot Analyzed: "]
+	}
+	242 -> 68
+		143 [label="\n std::vector<float, std::allocator<float>>::~vector\nNot Analyzed: Not a Loop", style=dotted]
+	143 -> 144
+		144 [label="\n std::_Vector_base<float, std::allocator<float>>::~_Vector_base\nNot Analyzed: Not a Loop", style=dotted]
+	144 -> 145
+		145 [label="\n std::_Vector_base<float, std::allocator<float>>::_M_deallocate\nNot Analyzed: Not a Loop", style=dotted]
+	145 -> 146
+		146 [label="\n std::allocator_traits<std::allocator<float>>::deallocate\nNot Analyzed: Not a Loop", style=dotted]
+	146 -> 147
+		147 [label="\n [Outside any known module]\nNot Analyzed: Not User Code", style=dotted]
+	label="Intel Advisor, build 613505";
+
+}

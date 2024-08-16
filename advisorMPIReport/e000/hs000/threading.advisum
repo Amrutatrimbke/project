@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- <!DOCTYPE IntelParallelAdvisorSummaryCollection SYSTEM  "IntelParallelAdvisorSummaryCollection.dtd"> -->
+
+<IntelParallelAdvisorSummary version="" 
+                             kind="DATAKIND_SURVEY_EX" >
+  <hotspot filename=""
+           line_no="4294967295"
+           routine="simulatePath"
+           is_vectorized="1"
+           self_time="3.099742E-01"
+           total_time="3.089985E+00"
+           trip_counts="959"
+           func_instance="39"
+           priority="0"/>
+  <hotspot filename=""
+           line_no="4294967295"
+           routine="main"
+           is_vectorized="0"
+           self_time="0.000000E+00"
+           total_time="3.089985E+00"
+           trip_counts="100001"
+           func_instance="36"
+           priority="0"/>
+  <hotspot filename="/tmp/shavak/spack-stage/spack-stage-hwloc-2.6.0-rsbdipafg2udtzjjkohyqkzl6gjubakg/spack-src/hwloc/topology.c"
+           line_no="3318"
+           routine="hwloc_discover_by_phase"
+           is_vectorized="0"
+           self_time="0.000000E+00"
+           total_time="1.200009E-01"
+           trip_counts="2"
+           func_instance="59"
+           priority="0"/>
+  <hotspot filename="/tmp/shavak/spack-stage/spack-stage-hwloc-2.6.0-rsbdipafg2udtzjjkohyqkzl6gjubakg/spack-src/hwloc/topology-linux.c"
+           line_no="6846"
+           routine="hwloc_look_linuxfs"
+           is_vectorized="0"
+           self_time="0.000000E+00"
+           total_time="5.000000E-02"
+           trip_counts="5"
+           func_instance="68"
+           priority="0"/>
+  <hotspot filename="/tmp/shavak/spack-stage/spack-stage-hwloc-2.6.0-rsbdipafg2udtzjjkohyqkzl6gjubakg/spack-src/hwloc/topology-linux.c"
+           line_no="4895"
+           routine="hwloc_look_linuxfs"
+           is_vectorized="0"
+           self_time="0.000000E+00"
+           total_time="4.000000E-02"
+           trip_counts="1"
+           func_instance="65"
+           priority="0"/>
+</IntelParallelAdvisorSummary >

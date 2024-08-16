@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- <!DOCTYPE IntelParallelAdvisorSummaryCollection SYSTEM  "IntelParallelAdvisorSummaryCollection.dtd"> -->
+
+<IntelParallelAdvisorSummary version="" 
+                             kind="DATAKIND_SURVEY_EX" >
+  <hotspot filename=""
+           line_no="4294967295"
+           routine="simulatePath"
+           is_vectorized="1"
+           self_time="3.099742E-01"
+           total_time="3.089985E+00"
+           trip_counts="959"
+           func_instance="39"
+           priority="0"/>
+  <hotspot filename="/tmp/shavak/spack-stage/spack-stage-libpciaccess-0.16-cnsuydopm5t3k57rozbjqkx23jxie5gy/spack-src/src/common_device_name.c"
+           line_no="243"
+           routine="populate_vendor"
+           is_vectorized="1"
+           self_time="1.999518E-02"
+           total_time="2.998585E-02"
+           trip_counts="10"
+           func_instance="16"
+           priority="0"/>
+  <hotspot filename=""
+           line_no="4294967295"
+           routine="std::__fill_a1&lt;float*, float&gt;"
+           is_vectorized="0"
+           self_time="1.001456E-02"
+           total_time="1.001456E-02"
+           trip_counts="67000"
+           func_instance="34"
+           priority="0"/>
+  <hotspot filename="/tmp/shavak/spack-stage/spack-stage-libevent-2.1.12-g3uxob6tamxinfaysf4ttc3nx5pjzb4h/spack-src/event.c"
+           line_no="1778"
+           routine="event_process_active"
+           is_vectorized="0"
+           self_time="0.000000E+00"
+           total_time="2.000000E-02"
+           trip_counts="1"
+           func_instance="11"
+           priority="0"/>
+  <hotspot filename="/tmp/shavak/spack-stage/spack-stage-libevent-2.1.12-g3uxob6tamxinfaysf4ttc3nx5pjzb4h/spack-src/event.c"
+           line_no="1961"
+           routine="event_base_loop"
+           is_vectorized="0"
+           self_time="0.000000E+00"
+           total_time="2.000000E-02"
+           trip_counts="1"
+           func_instance="19"
+           priority="0"/>
+</IntelParallelAdvisorSummary >

@@ -1,0 +1,101 @@
+region_id,estimation_id,overriden_name,overriden_value,specified_by,original_value
+213,0,dependent_iterations_distance,inf,assumed,inf
+213,0,has_dependency,False,assumed,True
+213,0,dependency_type,Parallel: Assumed,assumed,
+213,0,dependency_key,parallel_assumed,assumed,
+215,0,dependent_iterations_distance,inf,assumed,inf
+215,0,has_dependency,False,assumed,True
+215,0,dependency_type,Parallel: Assumed,assumed,
+215,0,dependency_key,parallel_assumed,assumed,
+369,0,dependent_iterations_distance,inf,assumed,inf
+369,0,has_dependency,False,assumed,True
+369,0,dependency_type,Parallel: Assumed,assumed,
+369,0,dependency_key,parallel_assumed,assumed,
+370,0,dependent_iterations_distance,inf,assumed,inf
+370,0,has_dependency,False,assumed,True
+370,0,dependency_type,Parallel: Assumed,assumed,
+370,0,dependency_key,parallel_assumed,assumed,
+371,0,dependent_iterations_distance,inf,assumed,inf
+371,0,has_dependency,False,assumed,True
+371,0,dependency_type,Parallel: Assumed,assumed,
+371,0,dependency_key,parallel_assumed,assumed,
+372,0,dependent_iterations_distance,inf,assumed,inf
+372,0,has_dependency,False,assumed,True
+372,0,dependency_type,Parallel: Assumed,assumed,
+372,0,dependency_key,parallel_assumed,assumed,
+216,0,dependent_iterations_distance,inf,assumed,inf
+216,0,has_dependency,False,assumed,True
+216,0,dependency_type,Parallel: Assumed,assumed,
+216,0,dependency_key,parallel_assumed,assumed,
+224,0,dependent_iterations_distance,inf,assumed,inf
+224,0,has_dependency,False,assumed,True
+224,0,dependency_type,Parallel: Assumed,assumed,
+224,0,dependency_key,parallel_assumed,assumed,
+205,0,dependent_iterations_distance,inf,assumed,inf
+205,0,has_dependency,False,assumed,True
+205,0,dependency_type,Parallel: Assumed,assumed,
+205,0,dependency_key,parallel_assumed,assumed,
+209,0,dependent_iterations_distance,inf,assumed,inf
+209,0,has_dependency,False,assumed,True
+209,0,dependency_type,Parallel: Assumed,assumed,
+209,0,dependency_key,parallel_assumed,assumed,
+191,0,dependent_iterations_distance,inf,assumed,inf
+191,0,has_dependency,False,assumed,True
+191,0,dependency_type,Parallel: Assumed,assumed,
+191,0,dependency_key,parallel_assumed,assumed,
+171,0,dependent_iterations_distance,inf,assumed,inf
+171,0,has_dependency,False,assumed,True
+171,0,dependency_type,Parallel: Assumed,assumed,
+171,0,dependency_key,parallel_assumed,assumed,
+179,0,dependent_iterations_distance,inf,assumed,inf
+179,0,has_dependency,False,assumed,True
+179,0,dependency_type,Parallel: Assumed,assumed,
+179,0,dependency_key,parallel_assumed,assumed,
+330,0,dependent_iterations_distance,inf,assumed,inf
+330,0,has_dependency,False,assumed,True
+330,0,dependency_type,Parallel: Assumed,assumed,
+330,0,dependency_key,parallel_assumed,assumed,
+320,0,dependent_iterations_distance,inf,assumed,inf
+320,0,has_dependency,False,assumed,True
+320,0,dependency_type,Parallel: Assumed,assumed,
+320,0,dependency_key,parallel_assumed,assumed,
+324,0,dependent_iterations_distance,inf,assumed,inf
+324,0,has_dependency,False,assumed,True
+324,0,dependency_type,Parallel: Assumed,assumed,
+324,0,dependency_key,parallel_assumed,assumed,
+325,0,dependent_iterations_distance,inf,assumed,inf
+325,0,has_dependency,False,assumed,True
+325,0,dependency_type,Parallel: Assumed,assumed,
+325,0,dependency_key,parallel_assumed,assumed,
+162,0,dependent_iterations_distance,inf,assumed,inf
+162,0,has_dependency,False,assumed,True
+162,0,dependency_type,Parallel: Assumed,assumed,
+162,0,dependency_key,parallel_assumed,assumed,
+332,0,dependent_iterations_distance,inf,assumed,inf
+332,0,has_dependency,False,assumed,True
+332,0,dependency_type,Parallel: Assumed,assumed,
+332,0,dependency_key,parallel_assumed,assumed,
+68,0,dependent_iterations_distance,inf,assumed,inf
+68,0,has_dependency,False,assumed,True
+68,0,dependency_type,Parallel: Assumed,assumed,
+68,0,dependency_key,parallel_assumed,assumed,
+284,0,dependent_iterations_distance,inf,assumed,inf
+284,0,has_dependency,False,assumed,True
+284,0,dependency_type,Parallel: Assumed,assumed,
+284,0,dependency_key,parallel_assumed,assumed,
+292,0,dependent_iterations_distance,inf,assumed,inf
+292,0,has_dependency,False,assumed,True
+292,0,dependency_type,Parallel: Assumed,assumed,
+292,0,dependency_key,parallel_assumed,assumed,
+293,0,dependent_iterations_distance,inf,assumed,inf
+293,0,has_dependency,False,assumed,True
+293,0,dependency_type,Parallel: Assumed,assumed,
+293,0,dependency_key,parallel_assumed,assumed,
+31,0,dependent_iterations_distance,inf,assumed,inf
+31,0,has_dependency,False,assumed,True
+31,0,dependency_type,Parallel: Assumed,assumed,
+31,0,dependency_key,parallel_assumed,assumed,
+69,0,dependent_iterations_distance,inf,assumed,inf
+69,0,has_dependency,False,assumed,True
+69,0,dependency_type,Parallel: Assumed,assumed,
+69,0,dependency_key,parallel_assumed,assumed,
